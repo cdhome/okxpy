@@ -1,0 +1,36 @@
+okxpy/
+├── README.md
+├── setup.py
+├── requirements.txt
+├── okxpy/
+│   ├── __init__.py
+│   ├── client.py          # 主客户端类
+│   ├── auth.py           # 认证和签名相关
+│   ├── config.py         # 配置文件
+│   ├── exceptions.py     # 自定义异常类
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── http.py      # HTTP 请求工具
+│   │   └── validator.py  # 参数验证工具
+│   ├── wallet/
+│   │   ├── __init__.py
+│   │   ├── client.py    # 钱包相关API
+│   │   └── models.py    # 钱包相关数据模型
+│   ├── dex/
+│   │   ├── __init__.py
+│   │   ├── client.py    # DEX相关API
+│   │   └── models.py    # DEX相关数据模型
+│   ├── marketplace/
+│   │   ├── __init__.py
+│   │   ├── client.py    # Marketplace相关API
+│   │   └── models.py    # Marketplace相关数据模型
+│   └── defi/
+│       ├── __init__.py
+│       ├── client.py    # DeFi相关API
+│       └── models.py    # DeFi相关数据模型
+└── tests/
+    ├── __init__.py
+    ├── test_wallet.py
+    ├── test_dex.py
+    ├── test_marketplace.py
+    └── test_defi.py 
